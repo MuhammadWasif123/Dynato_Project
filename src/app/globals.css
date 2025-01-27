@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color-light: white;
+  --text-color-dark: black;
+  /* --background-color-dark: black; */
+  /* --text-color-light:white; */
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Toggle Styling */
+
+/* Footer Toggle Mode */
+
+.footer-toggle {
+  background-color: #687ebb;
+  color: #fff;
+}
+
+html.dark .footer-toggle {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+  color: #fff;
+}
+
+/* Theme2 Styling */
+.theme2 {
+  background-color: #fff;
+}
+
+html.dark .theme1 {
+  background-color: #ffff;
+}
+
+.theme1 {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Custom Section Box Shadow */
+.box-shadow-1{
+  box-shadow: inset 20px 20px 20px rgba(0,0,0,0.1),25px 35px 20px rgba(0,0,0,0.1),25px 30px 30px rgba(0,0,0,0.1),
+  inset -20px -20px 25px rgba(255,255,255,0.9) ;
+
+}
+
+
+
+
+
+html.dark .box-shadow-1 {
+  box-shadow: inset -12px 19px 20px rgb(255 255 255 / 10%), 25px 35px 20px rgb(0 0 0 / 10%), 25px 30px 30px rgb(0 0 0 / 10%), inset -20px -20px 25px rgb(130 158 255 / 90%);
+}
+
+
+
+/* CUSTOM BORDER TOGGLE */
+.border-1 {
+  border-color: #94a3b8;
+}
+
+
+
+html.dark .border-1 {
+  border-color: rgb(0 78 255);
+}
+
+html.dark .theme1 {
+  background-color: #ffff;
+  color: #121212;
+}
+html.light body {
+  background-color: #ffff !important;
+  color: #121212 !important;
+}
+
+html.dark body {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+#about {
+  padding: 8px;
+  color: var(--text-color); /* Default text color */
+}
+
+html.dark #about {
+  color: white;
+}
+
+#nav_id {
+  color: black;
+}
+
+html.dark #nav_id {
+  color: white;
+}
+
+#hero_id {
+  color: black;
+}
+
+html.dark #hero_id {
+  color: white;
+}
+
+/* Heading Styling */
+.heading {
+  color: black;
+}
+
+html.dark .heading {
+  color: white;
+}
+
+.heading-2 {
+  color: #4b505e;
+}
+
+html.dark .heading-2 {
+  color: rgb(173 192 246);
+}
+
+/* Services Card Toggle Mode */
+
+.green-pink-gradient {
+  background: -webkit-linear-gradient(-90.13deg, #bcbb62 1.9%, #b4ac53 97.5%);
+}
+
+html.dark .green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.bg-toggle-mode {
+  --tw-bg-opacity: 1;
+  background-color: rgb(98 111 167);
+  color: #ffff;
+}
+
+html.dark .bg-toggle-mode {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+  color: #ffff;
+}
+
+.bg-toggle-benefit {
+  --tw-bg-opacity: 1;
+  background-color: rgb(98 111 167);
+  color: #ffff;
+}
+
+html.dark .bg-toggle-benefit {
+  --tw-bg-opacity: 1;
+  background-color: #fff;
+  color: #000000;
+}
+
+.bg-tertiary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+  color: #ffff;
+}
+
+
+html.dark .bg-industry{
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 230 251);
+  color:#000;
+
+}
+.bg-industry{
+  --tw-bg-opacity: 1;
+   background-color: rgb(98 111 167);
+   color:white;
+
+
+}
+
+
+
+
+/* Input Toggle Mode */
+.input-mode {
+  background-color: #fff;
+  color: #000000;
+}
+
+html.dark .input-mode {
+  background-color: #361d40;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  /* color-scheme: dark; */
+}
+
+.hash-span {
+  margin-top: -100px;
+  /* padding-bottom: 100px; */
+  display: block;
+}
+
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #804dee 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* canvas- styles */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+.blue-gradient {
+  background: linear-gradient(to right, #8b65db, #c1c2e1);
+}
+
+
+.nav-sticky-style{
+  @apply  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 flex items-center h-[9vh] fixed top-0 left-0 right-0 opacity-100 z-[100] shadow-sm shadow-slate-100;
+  background-color: rgb(158 151 203 / 20%);
+  position: fixed;
+
+}
+
+
+/* Industries Section Cards Styling */
+
+.perspective {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.group:hover .group-hover\:rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+
